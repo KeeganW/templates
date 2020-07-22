@@ -11,7 +11,7 @@ if [ "$1" = 'shell' ]; then
     # Access the shell of this container
     exec /bin/ash
 elif [ "$1" = 'dev' ]; then
-    # Run this container in development mode
+    # Run this container in development mode (using flask instead of waitress and debug on)
     export ENVIRONMENT=development
     export DEBUG=true
     export HOST=0.0.0.0
