@@ -66,8 +66,8 @@ if __name__ == "__main__":
     environment = os.getenv('ENVIRONMENT', 'production')
 
     # Configure host and port
-    port = os.getenv('PORT', config[environment]['port'])
     host = os.getenv('HOST', config[environment]['host'])
+    port = os.getenv('PORT', config[environment]['port'])
 
     # Depending on the environment, run as a waitress server or a flask server
     if environment == 'production':
