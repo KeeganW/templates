@@ -1,3 +1,7 @@
+"""
+General static configurations, for when you know what the environment is going to be between
+your deployments. These are defaults, and can be overridden by environment variables.
+"""
 config = {
     'production': {
         'host': '0.0.0.0',
