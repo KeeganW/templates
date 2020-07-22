@@ -4,7 +4,7 @@
     {% block head %}
         {% block meta %}
             <meta charset="UTF-8">
-            <meta name="description" content="Something"> <!-- TODO a description here -->
+            <meta name="description" content="This website does something."> <!-- TODO a description here -->
             <meta name="keywords" content="HTML,CSS,JavaScript"> <!-- TODO add keywords about this app -->
             <meta name="author" content="You"> <!-- TODO Add personal or company name -->
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -57,12 +57,12 @@
     <footer class="footer mt-auto py-3">
         {% block footer %}
             <div class="container">
-                <span class="text-muted">&copy; Copyright 2020 by <a href="http://localhost">No One</a>.</span>
+                <span class="text-muted">&copy; Copyright 2020 by <a href="http://localhost">You</a>.</span>
             </div>
         {% endblock %}
     </footer>
     {% block bootstrap_scripts %}
-        <!-- Bootstrap scripts -->
+        {# Use the following scripts if you download bootstrap and its components locally. #}
         {#        <script src="{{ url_for('static', filename='js/jquery-3.4.1.min.js') }}"></script>#}
         {#        <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>#}
         {#        <script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>#}
