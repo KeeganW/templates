@@ -54,6 +54,7 @@ def create_application():
     # Main route
     @app.route("/")
     def index():
+        # TODO Update the main index to reflect what you want to have as your main page
         log.debug('Running the main page. Application is running as a {} server.'.format(env))
         return render_template('layout.html')
 

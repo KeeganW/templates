@@ -10,14 +10,14 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
         {% endblock %}
 
-        <title>{% block title %}App{% endblock %}</title>
+        <!-- TODO Update to the name of your project -->
+        <title>{% block title %}Flask Template{% endblock %}</title>
 
         {# Use the following syle if you download bootstrap and its components locally. #}
         {#<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">#}
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
               integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
               crossorigin="anonymous">
-
         {% block css %}
             <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
         {% endblock %}
@@ -34,6 +34,7 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto">
                         {% block nav_items %}
+                            <!-- TODO Update with navigation to your new pages -->
                             <li class="nav-item {% if request.url_rule.endpoint == "hello.hello" %}active{% endif %}">
                                 <a class="nav-link" href="{{ url_for('hello.hello') }}">Hello</a>
                             </li>
@@ -49,6 +50,7 @@
     <main role="main" class="flex-shrink-0">
         <div class="container">
             {% block content %}
+                <!-- TODO Update main page with certain default information -->
                 <h1 class="mt-5">Welcome to the Main Page</h1>
                 <p class="lead">Fill in this template application as you would like, for your new app.</p>
             {% endblock %}
@@ -57,11 +59,14 @@
     <footer class="footer mt-auto py-3">
         {% block footer %}
             <div class="container">
+                <!-- TODO Specify the copyright -->
                 <span class="text-muted">&copy; Copyright 2020 by <a href="http://localhost">You</a>.</span>
             </div>
         {% endblock %}
     </footer>
     {% block bootstrap_scripts %}
+        <!-- TODO Decide whether to use local packages vs packages from the internet. Larger project size vs no offline
+                capabilities -->
         {# Use the following scripts if you download bootstrap and its components locally. #}
         {#        <script src="{{ url_for('static', filename='js/jquery-3.4.1.min.js') }}"></script>#}
         {#        <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>#}
