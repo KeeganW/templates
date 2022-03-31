@@ -1,19 +1,19 @@
-import React from 'react';
-import { render } from 'react-dom';
+import React from "react";
+import { render } from "react-dom";
 import {
     BrowserRouter,
     Routes,
     Route,
-} from 'react-router-dom';
+} from "react-router-dom";
 import Whales from "./routes/whales";
 import Sharks from "./routes/sharks";
 
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
 
 // More route information can be found at https://reactrouter.com/docs/en/v6/getting-started/tutorial
-const rootElement = document.getElementById('root');
+const rootElement = document.getElementById("root");
 render(
     <BrowserRouter>
         <Routes>
