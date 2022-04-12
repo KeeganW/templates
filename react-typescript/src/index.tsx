@@ -5,12 +5,11 @@ import {
     Routes,
     Route,
 } from "react-router-dom";
-import Whales from "./routes/whales";
-import Sharks from "./routes/sharks";
+import {Whales} from "src/routes/Whales";
+import {Sharks} from "src/routes/Sharks";
 
 import "./index.css";
-import App from "./App";
-import reportWebVitals from "./reportWebVitals";
+import {App} from "src/App";
 
 // More route information can be found at https://reactrouter.com/docs/en/v6/getting-started/tutorial
 const rootElement = document.getElementById("root");
@@ -33,8 +32,3 @@ render(
     </BrowserRouter>,
     rootElement
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
